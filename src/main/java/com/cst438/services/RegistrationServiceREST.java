@@ -87,9 +87,8 @@ public class RegistrationServiceREST implements RegistrationService {
 		e.setStudentEmail(enrollmentDTO.studentEmail());
 		e.setCourse(c);
 		enrollmentRepository.save(e);
-		int temp = e.getId();
 		
-		return null;
+		return enrollmentDTO;
 		
 	}
 
